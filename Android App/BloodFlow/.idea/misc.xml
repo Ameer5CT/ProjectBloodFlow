@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/ameer/AndroidStudioProjects/BloodFlow/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1415" />
+        <entry key="..\:/Users/ameer/AndroidStudioProjects/BloodFlow/app/src/main/res/drawable/border.xml" value="0.242" />
+        <entry key="..\:/Users/ameer/AndroidStudioProjects/BloodFlow/app/src/main/res/drawable/custom_border.xml" value="0.242" />
+        <entry key="..\:/Users/ameer/AndroidStudioProjects/BloodFlow/app/src/main/res/drawable/customborder.xml" value="0.242" />
+        <entry key="..\:/Users/ameer/AndroidStudioProjects/BloodFlow/app/src/main/res/drawable/ic_add_doctor.xml" value="0.242" />
+        <entry key="..\:/Users/ameer/AndroidStudioProjects/BloodFlow/app/src/main/res/drawable/ic_doctor_icon.xml" value="0.242" />
+        <entry key="..\:/Users/ameer/AndroidStudioProjects/BloodFlow/app/src/main/res/drawable/ic_heart_beat.xml" value="0.242" />
+        <entry key="..\:/Users/ameer/AndroidStudioProjects/BloodFlow/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1415" />
+        <entry key="..\:/Users/ameer/AndroidStudioProjects/BloodFlow/app/src/main/res/drawable/ic_send_document.xml" value="0.242" />
+        <entry key="..\:/Users/ameer/AndroidStudioProjects/BloodFlow/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/ameer/AndroidStudioProjects/BloodFlow/app/src/main/res/layout/add_doctor_dialog.xml" value="0.25" />
+        <entry key="..\:/Users/ameer/AndroidStudioProjects/BloodFlow/app/src/main/res/layout/appbar.xml" value="0.25" />
+        <entry key="..\:/Users/ameer/AndroidStudioProjects/BloodFlow/app/src/main/res/layout/blood_test.xml" value="0.25" />
+        <entry key="..\:/Users/ameer/AndroidStudioProjects/BloodFlow/app/src/main/res/layout/bt_list_dialog.xml" value="0.25" />
+        <entry key="..\:/Users/ameer/AndroidStudioProjects/BloodFlow/app/src/main/res/layout/custom_listview.xml" value="0.25" />
+        <entry key="..\:/Users/ameer/AndroidStudioProjects/BloodFlow/app/src/main/res/layout/db_listview.xml" value="0.25" />
+        <entry key="..\:/Users/ameer/AndroidStudioProjects/BloodFlow/app/src/main/res/layout/send_extract_dialog.xml" value="0.25" />
+        <entry key="..\:/Users/ameer/AndroidStudioProjects/BloodFlow/app/src/main/res/layout/show_send.xml" value="0.25" />
+        <entry key="..\:/Users/ameer/AndroidStudioProjects/BloodFlow/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.242" />
+        <entry key="..\:/Users/ameer/AndroidStudioProjects/BloodFlow/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.211" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

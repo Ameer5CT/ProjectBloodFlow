@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/myToolBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/myToolBar"
+        app:layout_constraintEnd_toEndOf="@+id/myToolBar"
+        app:layout_constraintStart_toStartOf="@+id/myToolBar"
+        app:layout_constraintTop_toTopOf="@+id/myToolBar" />
+
+    <TextView
+        android:id="@+id/isConnectText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myToolBar" />
+
+    <TextView
+        android:id="@+id/btName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="1dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/isConnectText" />
+
+    <TextView
+        android:id="@+id/btMAC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/black"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btName" />
+
+    <Button
+        android:id="@+id/btnConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:onClick="clickConnect"
+        android:text="@string/connect"
+        app:layout_constraintBottom_toBottomOf="@+id/btMAC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/isConnectText" />
+
+    <FrameLayout
+        android:id="@+id/btnAddDoctor"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginStart="10dp"
+        android:background="@android:color/transparent"
+        android:onClick="clickAddDoctor"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/myToolBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/myToolBar">
+
+        <ImageButton
+            android:id="@+id/bbtnAddDoctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:clickable="false"
+            android:contentDescription="@string/add_doctor_label"
+            android:duplicateParentState="true"
+            android:focusable="false"
+            app:srcCompat="@drawable/ic_add_doctor" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/btnSendList"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginEnd="10dp"
+        android:background="@android:color/transparent"
+        android:onClick="clickSendList"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/myToolBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/myToolBar">
+
+        <ImageButton
+            android:id="@+id/bbtnSendList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:background="@android:color/transparent"
+            android:clickable="false"
+            android:contentDescription="@string/send_list"
+            android:duplicateParentState="true"
+            android:focusable="false"
+            app:srcCompat="@drawable/ic_send_document" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btnBloodTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="clickBloodTest"
+        android:text="@string/blood_test"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btMAC" />
+
+    <LinearLayout
+        android:id="@+id/dbTitleList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        android:weightSum="5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBloodTest">
+
+        <TextView
+            android:id="@+id/dbTitleListBpm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/bpm"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dbTitleListSpo2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/spo2"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dbTitleListTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/time"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dbTitleListDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/date"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/dbList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dbTitleList" />
+</androidx.constraintlayout.widget.ConstraintLayout>

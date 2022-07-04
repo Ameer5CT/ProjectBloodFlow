@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/SeExTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/send_extract_tests"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/SeExTitleLastDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SeExTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/last_day"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/lastDayBtns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SeExTitleLastDay"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/lastDaySend"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/send"
+            tools:ignore="ButtonStyle,DuplicateSpeakableTextCheck" />
+
+        <Button
+            android:id="@+id/lastDayExtract"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/extract"
+            tools:ignore="ButtonStyle,DuplicateSpeakableTextCheck" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/SeExTitleLastWeek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lastDayBtns"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="@string/last_week"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/lastWeekBtns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SeExTitleLastWeek"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/lastWeekSend"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/send"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/lastWeekExtract"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/extract"
+            tools:ignore="ButtonStyle" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/SeExTitleLastMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lastWeekBtns"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="@string/last_month"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/lastMonthBtns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SeExTitleLastMonth"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/lastMonthSend"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/send"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/lastMonthExtract"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/extract"
+            tools:ignore="ButtonStyle" />
+    </LinearLayout>
+
+</RelativeLayout>

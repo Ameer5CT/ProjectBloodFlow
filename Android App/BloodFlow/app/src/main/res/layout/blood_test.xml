@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textHeartBPM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/heart_bpm"
+        android:textColor="@color/red"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/viewHeartBPM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textHeartBPM"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textSpo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewHeartBPM"
+        android:layout_marginStart="10dp"
+        android:text="@string/spo2"
+        android:textColor="@color/red"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/viewSpo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textSpo2"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/imgBeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:contentDescription="@string/heart_bpm"
+        app:srcCompat="@drawable/ic_heart_beat" />
+
+    <Button
+        android:id="@+id/btnSendDr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewSpo2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/send_dr" />
+
+    <Button
+        android:id="@+id/btnSaveTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSendDr"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/save" />
+
+</RelativeLayout>
